@@ -20,6 +20,7 @@
 		FE1785211F4ACA2A00FA8BD4 /* UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1785201F4ACA2A00FA8BD4 /* UIView.m */; };
 		FE3476C41F4E5D8200436C96 /* Main_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3476C31F4E5D8200436C96 /* Main_ViewController.m */; };
 		FEA203031F4E764800FB378E /* Main_Scroller_view.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA203021F4E764800FB378E /* Main_Scroller_view.m */; };
+		FEA203061F4FCC9400FB378E /* lzj_view.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA203051F4FCC9400FB378E /* lzj_view.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		FE3476C31F4E5D8200436C96 /* Main_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Main_ViewController.m; sourceTree = "<group>"; };
 		FEA203011F4E764800FB378E /* Main_Scroller_view.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Main_Scroller_view.h; sourceTree = "<group>"; };
 		FEA203021F4E764800FB378E /* Main_Scroller_view.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Main_Scroller_view.m; sourceTree = "<group>"; };
+		FEA203041F4FCC9400FB378E /* lzj_view.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lzj_view.h; sourceTree = "<group>"; };
+		FEA203051F4FCC9400FB378E /* lzj_view.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lzj_view.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +162,8 @@
 				FE1784F91F4AC9F400FA8BD4 /* LaunchScreen.storyboard */,
 				FE1784FC1F4AC9F400FA8BD4 /* Info.plist */,
 				FE1784EB1F4AC9F400FA8BD4 /* Supporting Files */,
+				FEA203041F4FCC9400FB378E /* lzj_view.h */,
+				FEA203051F4FCC9400FB378E /* lzj_view.m */,
 			);
 			path = Running;
 			sourceTree = "<group>";
@@ -582,6 +587,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE1785211F4ACA2A00FA8BD4 /* UIView.m in Sources */,
+				FEA203061F4FCC9400FB378E /* lzj_view.m in Sources */,
 				FE1784F01F4AC9F400FA8BD4 /* AppDelegate.m in Sources */,
 				FE3476C41F4E5D8200436C96 /* Main_ViewController.m in Sources */,
 				FEA203031F4E764800FB378E /* Main_Scroller_view.m in Sources */,
