@@ -1,0 +1,13 @@
+//
+//  Running_PrefixHeader.pch
+//  Running
+//
+//  Created by 吕志杰 on 2017/8/24.
+//  Copyright © 2017年 吕志杰. All rights reserved.
+//
+
+#ifndef Running_PrefixHeader_pch
+#define Running_PrefixHeader_pch
+#import "Running_Header.h"
+
+#endif /* Running_PrefixHeader_pch */
