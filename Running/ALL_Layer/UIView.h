@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-IB_DESIGNABLE
-@interface UIView(IB)
-@property (nonatomic, assign) IBInspectable NSInteger cornerRadius;
-@property (assign,nonatomic ) IBInspectable float     borderWidth;
-@property (assign,nonatomic ) IBInspectable UIColor   *borderColor;
-@property (assign,nonatomic ) IBInspectable UIColor *shadowColor;
-@property (assign,nonatomic ) IBInspectable float shadowRadius;
-@property (assign,nonatomic ) IBInspectable float shadowOpacity;
-@end
+//IB_DESIGNABLE
+//@interface UIView(IB)
+//@property (nonatomic, assign) IBInspectable NSInteger cornerRadius;
+//@property (assign,nonatomic ) IBInspectable float     borderWidth;
+//@property (assign,nonatomic ) IBInspectable UIColor   *borderColor;
+//@property (assign,nonatomic ) IBInspectable UIColor *shadowColor;
+//@property (assign,nonatomic ) IBInspectable float shadowRadius;
+//@property (assign,nonatomic ) IBInspectable float shadowOpacity;
+//@end
+

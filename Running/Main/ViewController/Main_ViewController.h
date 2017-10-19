@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Main_ViewController : UIViewController
+@interface Main_ViewController : Map_ViewController
 
 @end

@@ -8,8 +8,8 @@
 
 #import "UIView.h"
 
-@implementation UIView(IB)
-
+//@implementation UIView(IB)
+/*
 - (void)setCornerRadius:(NSInteger)cornerRadius{
     self.layer.cornerRadius = cornerRadius;
     self.layer.masksToBounds = YES;
@@ -60,6 +60,7 @@
 
 - (float)shadowOpacity{
     return self.layer.shadowOpacity;
-}
+}*/
 
-@end
+//@end
+
