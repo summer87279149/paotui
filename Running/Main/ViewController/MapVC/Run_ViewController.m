@@ -14,8 +14,8 @@
 
 @interface Run_ViewController ()<Run_Detail_ViewBtnClickDelegate>
 {
-    BOOL isKuai;
-    BOOL isPing;
+//    BOOL isKuai;
+//    BOOL isPing;
     NSString*startLon;//起点lon
     NSString*startLat;//起点lat
     NSString*endLon;//终点lon
@@ -23,6 +23,8 @@
 //    NSString*distance;
     
 }
+@property (nonatomic, assign) BOOL isKuai;
+@property (nonatomic, assign) BOOL isPing;
 @property (weak, nonatomic) IBOutlet UIView *main_view;
 - (IBAction)right_click:(id)sender;
 @property (strong ,nonatomic) Run_Detail_View *run_view;
@@ -31,6 +33,8 @@
 @end
 
 @implementation Run_ViewController
+
+#pragma mark - Run_Detail_ViewBtnClickDelegate代理
 //选择目的地
 -(void)end:(UIButton*)sender{
     XTMapViewController *vc = [[XTMapViewController alloc]init];
@@ -59,8 +63,12 @@
     [self.navigationController pushViewController:vc animated:YES];
     
 }
-
-
+-(void)chooseDateCallback:(NSDate *)date{
+    NSDateFormatter *formater = [[NSDateFormatter alloc]init];
+    formater.dateFormat = @"yyyy-MM-dd HH:mm";
+    self.run_view.goTime.text = [formater stringFromDate:date];
+}
+#pragma mark lazy
 - (UIButton *)start_btn
 {
     if(!_start_btn)
@@ -74,11 +82,6 @@
     }
     return _start_btn;
 }
-
-- (IBAction)right_click:(id)sender {
-    PINGCHNAGSTORYBOARD(@"Main", @"CARID");
-}
-
 - (Run_Detail_View *)run_view
 {
     if(!_run_view)
@@ -90,6 +93,11 @@
     return _run_view;
 }
 
+- (IBAction)right_click:(id)sender {
+    PINGCHNAGSTORYBOARD(@"Main", @"CARID");
+}
+
+
 - (IBAction)publish_click:(id)sender {
 }
 
@@ -97,10 +105,12 @@
     [super viewDidLoad];
     UIBarButtonItem * item = [[UIBarButtonItem alloc]initWithTitle:@"发布" style:UIBarButtonItemStylePlain target:self action:@selector(right_click:)];
     self.navigationItem.rightBarButtonItem = item;
-    isKuai = isPing = YES;
+    self.isKuai =  NO;
+    self.isPing = NO;
     self.main_view.clipsToBounds = YES;
-    [self.view addSubview:self.run_view];
     [self.view addSubview:self.start_btn];
+    [self.view addSubview:self.run_view];
+   
     [self add_tap];
     [self add_run_view_block];
     __weak typeof(self)weakself = self;
@@ -112,8 +122,6 @@
         };
         [weakself.navigationController pushViewController: say_VC animated:YES];
     };
-    
-    
 }
 -(NSString*)calculateDistance{
     //百度地图计算距离
@@ -133,12 +141,29 @@
 {
     __weak typeof(self)weakself = self;
     self.run_view.kuai_block = ^{
-        weakself.run_view.kuai_img.image = [UIImage imageNamed: isKuai == YES ? @"选中" : @"没选择"];
-        isKuai = isKuai == YES ? NO : YES;
+        weakself.isKuai = !weakself.isKuai;
+        weakself.run_view.kuai_img.image = [UIImage imageNamed: weakself.isKuai == NO ? @"没选择":@"选中" ];
+        if(weakself.isKuai){
+           weakself. isPing = NO;
+            weakself.run_view.ping_img.image = [UIImage imageNamed:weakself.isPing == NO ?  @"没选择":@"选中"];
+        }else{
+            weakself. isPing = YES;
+            weakself.run_view.ping_img.image = [UIImage imageNamed:weakself.isPing == NO ?  @"没选择":@"选中"];
+        }
+       
     };
     self.run_view.ping_block = ^{
-        weakself.run_view.ping_img.image = [UIImage imageNamed:isPing == YES ? @"选中" : @"没选择"];
-        isPing = isPing == YES ? NO : YES;
+        weakself.isPing = !weakself.isPing;
+        weakself.run_view.ping_img.image = [UIImage imageNamed:weakself.isPing == NO ?  @"没选择":@"选中"];
+        
+        if(weakself.isPing){
+            weakself.isKuai = NO;
+            weakself.run_view.kuai_img.image = [UIImage imageNamed: weakself.isKuai == NO ? @"没选择":@"选中" ];
+        }else{
+            weakself.isKuai = YES;
+            weakself.run_view.kuai_img.image = [UIImage imageNamed: weakself.isKuai == NO ? @"没选择":@"选中" ];
+        }
+    
     };
 }
 

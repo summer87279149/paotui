@@ -8,8 +8,8 @@
 
 #import "UIView.h"
 
-//@implementation UIView(IB)
-/*
+@implementation UIView(IB)
+
 - (void)setCornerRadius:(NSInteger)cornerRadius{
     self.layer.cornerRadius = cornerRadius;
     self.layer.masksToBounds = YES;
@@ -34,7 +34,7 @@
 -(UIColor *)borderColor{
     return [UIColor colorWithCGColor:self.layer.borderColor];
 }
-//
+
 //阴影的颜色
 - (void)setShadowColor:(UIColor *)shadowColor{
     self.layer.shadowColor = shadowColor.CGColor;
@@ -60,7 +60,7 @@
 
 - (float)shadowOpacity{
     return self.layer.shadowOpacity;
-}*/
+}
 
-//@end
+@end
 

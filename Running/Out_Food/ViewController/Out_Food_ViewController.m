@@ -12,10 +12,12 @@
 #import "Run_Pay_Result_TableViewController.h"
 
 @interface Out_Food_ViewController ()
-{
-    BOOL isKuai;
-    BOOL isPing;
-}
+//{
+//    BOOL isKuai;
+//    BOOL isPing;
+//}
+@property (nonatomic, assign) BOOL isKuai;
+@property (nonatomic, assign) BOOL isPing;
 @property (weak, nonatomic) IBOutlet UIView *main_view;
 @property (strong ,nonatomic) UIButton *start_btn;
 @property (strong ,nonatomic) Run_Detail_View *run_view;
@@ -57,7 +59,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    isKuai = isPing = YES;
+    self.isKuai = NO;
+    self.isPing = NO;
     self.main_view.clipsToBounds = YES;
     [self.view addSubview:self.run_view];
     [self.view addSubview:self.start_btn];
@@ -77,12 +80,27 @@
 {
     __weak typeof(self)weakself = self;
     self.run_view.kuai_block = ^{
-        weakself.run_view.kuai_img.image = [UIImage imageNamed: isKuai == YES ? @"选中" : @"没选择"];
-        isKuai = isKuai == YES ? NO : YES;
+        weakself.isKuai = !weakself.isKuai;
+        weakself.run_view.kuai_img.image = [UIImage imageNamed: weakself.isKuai == NO ? @"没选择":@"选中" ];
+        if(weakself.isKuai){
+            weakself. isPing = NO;
+            weakself.run_view.ping_img.image = [UIImage imageNamed:weakself.isPing == NO ?  @"没选择":@"选中"];
+        }else{
+            weakself. isPing = YES;
+            weakself.run_view.ping_img.image = [UIImage imageNamed:weakself.isPing == NO ?  @"没选择":@"选中"];
+        }
     };
     self.run_view.ping_block = ^{
-        weakself.run_view.ping_img.image = [UIImage imageNamed:isPing == YES ? @"选中" : @"没选择"];
-        isPing = isPing == YES ? NO : YES;
+        weakself.isPing = !weakself.isPing;
+        weakself.run_view.ping_img.image = [UIImage imageNamed:weakself.isPing == NO ?  @"没选择":@"选中"];
+        
+        if(weakself.isPing){
+            weakself.isKuai = NO;
+            weakself.run_view.kuai_img.image = [UIImage imageNamed: weakself.isKuai == NO ? @"没选择":@"选中" ];
+        }else{
+            weakself.isKuai = YES;
+            weakself.run_view.kuai_img.image = [UIImage imageNamed: weakself.isKuai == NO ? @"没选择":@"选中" ];
+        }
     };
     self.run_view.four_lab.text = @"联系电话";
     self.run_view.four_textfield.placeholder = @"输入手机号码";

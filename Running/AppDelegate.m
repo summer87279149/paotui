@@ -5,7 +5,7 @@
 //  Created by 吕志杰 on 2017/8/21.
 //  Copyright © 2017年 吕志杰. All rights reserved.
 //
-
+#import "GoodCheZhuViewController.h"
 #import "AppDelegate.h"
 #import "DengRuViewController.h"
 @interface AppDelegate ()
@@ -25,7 +25,7 @@
     
 //    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 //    self.window.backgroundColor = [UIColor whiteColor];
-//    self.window.rootViewController=[DengRuViewController new];
+//    self.window.rootViewController=[GoodCheZhuViewController new];
 //    [self.window makeKeyAndVisible];
    
     return YES;

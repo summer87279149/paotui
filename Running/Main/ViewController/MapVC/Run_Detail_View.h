@@ -12,14 +12,18 @@
 //出发地按钮和目的地按钮的delegate
 -(void)start:(UIButton*)sender;
 -(void)end:(UIButton*)sender;
+-(void)chooseDateCallback:(NSDate *)date;
 @end
 
 @interface Run_Detail_View : UIView
 //xt
+
+@property (weak, nonatomic) IBOutlet UITextField *goTime;
+@property (nonatomic, strong) UIView *white;
 @property (weak, nonatomic) IBOutlet UITextField *startText;
 @property (weak, nonatomic) IBOutlet UITextField *endText;
 @property (weak, nonatomic) IBOutlet UITextField *distanceText;
-
+@property (nonatomic, strong) UIDatePicker *datePicker;
 
 
 //lzj

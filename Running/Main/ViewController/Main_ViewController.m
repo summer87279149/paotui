@@ -5,7 +5,8 @@
 //  Created by 吕志杰 on 2017/8/24.
 //  Copyright © 2017年 吕志杰. All rights reserved.
 //
-
+#import "HeHuoRenViewController.h"
+#import "WalletViewController.h"
 #import "Main_ViewController.h"
 #import "Main_Scroller_view.h"
 #import "Top_view.h"
@@ -101,13 +102,32 @@
     __weak typeof(self)weakself = self;
     self.persontableview.cell_block = ^(NSInteger section_index, NSInteger row_index) {
         [weakself add_tap_click];
-        if(section_index == 0 && row_index == 1)
+        if(section_index == 0 && row_index == 1)//我的订单
         {
             [weakself share_VC:[My_Order_ViewController new] story_name:@"Main" story_id:@"ORDERID"];
-        }else if (section_index == 3 && row_index == 0)
+        }else if (section_index == 3 && row_index == 0)//系统设置
         {
             [weakself share_VC:[My_Set_TableViewController new] story_name:@"Main" story_id:@"SETID"];
+        }else if (section_index == 0 && row_index == 2)//钱包
+        {
+            WalletViewController *vc = [[WalletViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
         }
+        else if (section_index == 2 && row_index == 0)//钱包
+        {
+            HeHuoRenViewController *vc = [[HeHuoRenViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     };
 }
 

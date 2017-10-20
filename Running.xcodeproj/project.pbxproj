@@ -15,6 +15,14 @@
 		84A5D34C1F98461E00BB3E4F /* DengRuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5D34A1F98461E00BB3E4F /* DengRuViewController.xib */; };
 		84A5D3501F984DD600BB3E4F /* WangJiPwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A5D34E1F984DD600BB3E4F /* WangJiPwdViewController.m */; };
 		84A5D3511F984DD600BB3E4F /* WangJiPwdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5D34F1F984DD600BB3E4F /* WangJiPwdViewController.xib */; };
+		84AE55841F999E1A000D0016 /* GoodCheZhuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AE55821F999E1A000D0016 /* GoodCheZhuViewController.m */; };
+		84AE55851F999E1A000D0016 /* GoodCheZhuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AE55831F999E1A000D0016 /* GoodCheZhuViewController.xib */; };
+		84AE55AC1F99C924000D0016 /* WalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AE55AA1F99C924000D0016 /* WalletViewController.m */; };
+		84AE55AD1F99C924000D0016 /* WalletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AE55AB1F99C924000D0016 /* WalletViewController.xib */; };
+		84AE55B41F99E16F000D0016 /* HeHuoRenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AE55B21F99E16F000D0016 /* HeHuoRenViewController.m */; };
+		84AE55B51F99E16F000D0016 /* HeHuoRenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AE55B31F99E16F000D0016 /* HeHuoRenViewController.xib */; };
+		84AE55C01F99F02F000D0016 /* HeHuoRenCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AE55BE1F99F02F000D0016 /* HeHuoRenCell.m */; };
+		84AE55C11F99F02F000D0016 /* HeHuoRenCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AE55BF1F99F02F000D0016 /* HeHuoRenCell.xib */; };
 		84C41D041F987E5F007E2F04 /* XTMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C41D021F987E5F007E2F04 /* XTMapViewController.m */; };
 		84C41D051F987E5F007E2F04 /* XTMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C41D031F987E5F007E2F04 /* XTMapViewController.xib */; };
 		84C41D151F98996B007E2F04 /* CityData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84C41D091F98996B007E2F04 /* CityData.plist */; };
@@ -399,6 +407,18 @@
 		84A5D34D1F984DD600BB3E4F /* WangJiPwdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WangJiPwdViewController.h; sourceTree = "<group>"; };
 		84A5D34E1F984DD600BB3E4F /* WangJiPwdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WangJiPwdViewController.m; sourceTree = "<group>"; };
 		84A5D34F1F984DD600BB3E4F /* WangJiPwdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WangJiPwdViewController.xib; sourceTree = "<group>"; };
+		84AE55811F999E1A000D0016 /* GoodCheZhuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodCheZhuViewController.h; sourceTree = "<group>"; };
+		84AE55821F999E1A000D0016 /* GoodCheZhuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodCheZhuViewController.m; sourceTree = "<group>"; };
+		84AE55831F999E1A000D0016 /* GoodCheZhuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoodCheZhuViewController.xib; sourceTree = "<group>"; };
+		84AE55A91F99C924000D0016 /* WalletViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletViewController.h; sourceTree = "<group>"; };
+		84AE55AA1F99C924000D0016 /* WalletViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletViewController.m; sourceTree = "<group>"; };
+		84AE55AB1F99C924000D0016 /* WalletViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletViewController.xib; sourceTree = "<group>"; };
+		84AE55B11F99E16F000D0016 /* HeHuoRenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeHuoRenViewController.h; sourceTree = "<group>"; };
+		84AE55B21F99E16F000D0016 /* HeHuoRenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeHuoRenViewController.m; sourceTree = "<group>"; };
+		84AE55B31F99E16F000D0016 /* HeHuoRenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeHuoRenViewController.xib; sourceTree = "<group>"; };
+		84AE55BD1F99F02F000D0016 /* HeHuoRenCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeHuoRenCell.h; sourceTree = "<group>"; };
+		84AE55BE1F99F02F000D0016 /* HeHuoRenCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeHuoRenCell.m; sourceTree = "<group>"; };
+		84AE55BF1F99F02F000D0016 /* HeHuoRenCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeHuoRenCell.xib; sourceTree = "<group>"; };
 		84C41D011F987E5F007E2F04 /* XTMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XTMapViewController.h; path = ViewController/XTMapViewController.h; sourceTree = SOURCE_ROOT; };
 		84C41D021F987E5F007E2F04 /* XTMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = XTMapViewController.m; path = ViewController/XTMapViewController.m; sourceTree = SOURCE_ROOT; };
 		84C41D031F987E5F007E2F04 /* XTMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = XTMapViewController.xib; path = ViewController/XTMapViewController.xib; sourceTree = SOURCE_ROOT; };
@@ -1124,6 +1144,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84AE55801F999DC8000D0016 /* 车主申请 */ = {
+			isa = PBXGroup;
+			children = (
+				84AE55811F999E1A000D0016 /* GoodCheZhuViewController.h */,
+				84AE55821F999E1A000D0016 /* GoodCheZhuViewController.m */,
+				84AE55831F999E1A000D0016 /* GoodCheZhuViewController.xib */,
+			);
+			path = "车主申请";
+			sourceTree = "<group>";
+		};
+		84AE55A81F99C912000D0016 /* 我的钱包 */ = {
+			isa = PBXGroup;
+			children = (
+				84AE55A91F99C924000D0016 /* WalletViewController.h */,
+				84AE55AA1F99C924000D0016 /* WalletViewController.m */,
+				84AE55AB1F99C924000D0016 /* WalletViewController.xib */,
+			);
+			path = "我的钱包";
+			sourceTree = "<group>";
+		};
+		84AE55B01F99E161000D0016 /* 合伙人 */ = {
+			isa = PBXGroup;
+			children = (
+				84AE55B11F99E16F000D0016 /* HeHuoRenViewController.h */,
+				84AE55B21F99E16F000D0016 /* HeHuoRenViewController.m */,
+				84AE55B31F99E16F000D0016 /* HeHuoRenViewController.xib */,
+				84AE55BD1F99F02F000D0016 /* HeHuoRenCell.h */,
+				84AE55BE1F99F02F000D0016 /* HeHuoRenCell.m */,
+				84AE55BF1F99F02F000D0016 /* HeHuoRenCell.xib */,
+			);
+			path = "合伙人";
+			sourceTree = "<group>";
+		};
 		84C41D081F98996B007E2F04 /* TLCityPicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -2538,6 +2591,9 @@
 		FE3476B61F4E5D5D00436C96 /* My */ = {
 			isa = PBXGroup;
 			children = (
+				84AE55B01F99E161000D0016 /* 合伙人 */,
+				84AE55A81F99C912000D0016 /* 我的钱包 */,
+				84AE55801F999DC8000D0016 /* 车主申请 */,
 				FE3476B71F4E5D5D00436C96 /* Model */,
 				FE3476B81F4E5D5D00436C96 /* View */,
 				FE3476B91F4E5D5D00436C96 /* ViewController */,
@@ -2922,17 +2978,21 @@
 				FE906A291F516C0D000D0A10 /* Search_View.xib in Resources */,
 				FED74DDF1F5553F0005AB588 /* My_Order_TableViewCell.xib in Resources */,
 				84D49CDA1F97004400DF97B3 /* TZImagePickerController.bundle in Resources */,
+				84AE55AD1F99C924000D0016 /* WalletViewController.xib in Resources */,
 				FE1784F81F4AC9F400FA8BD4 /* Assets.xcassets in Resources */,
 				84D49D861F972AE800DF97B3 /* ZhuCeViewController.xib in Resources */,
 				FED74E451F58004C005AB588 /* Go_Buy_CollectionViewCell.xib in Resources */,
 				84C41D151F98996B007E2F04 /* CityData.plist in Resources */,
 				84D49D741F97208A00DF97B3 /* TOCropViewControllerLocalizable.strings in Resources */,
 				84C41D051F987E5F007E2F04 /* XTMapViewController.xib in Resources */,
+				84AE55C11F99F02F000D0016 /* HeHuoRenCell.xib in Resources */,
 				FE906A211F5152FC000D0A10 /* Top_View.xib in Resources */,
 				FE906A4D1F53DFC3000D0A10 /* Run_Detail_View.xib in Resources */,
 				FE906A361F53B203000D0A10 /* Person_TableViewCell.xib in Resources */,
 				FE1784F61F4AC9F400FA8BD4 /* Main.storyboard in Resources */,
 				84D49CBD1F97004400DF97B3 /* MJRefresh.bundle in Resources */,
+				84AE55851F999E1A000D0016 /* GoodCheZhuViewController.xib in Resources */,
+				84AE55B51F99E16F000D0016 /* HeHuoRenViewController.xib in Resources */,
 				84D49D6B1F97208A00DF97B3 /* SKFCamera.bundle in Resources */,
 				84A5D34C1F98461E00BB3E4F /* DengRuViewController.xib in Resources */,
 				84D49CBC1F97004400DF97B3 /* MBProgressHUD.bundle in Resources */,
@@ -3165,6 +3225,7 @@
 				84D49AB61F96FFDB00DF97B3 /* UIImage+JKSuperCompress.m in Sources */,
 				84D49A411F96FFDB00DF97B3 /* NSDate+JKZeroDate.m in Sources */,
 				84D49AE41F96FFDB00DF97B3 /* UIView+JKFrame.m in Sources */,
+				84AE55C01F99F02F000D0016 /* HeHuoRenCell.m in Sources */,
 				84D49A3C1F96FFDB00DF97B3 /* NSDate+JKExtension.m in Sources */,
 				84D49A781F96FFDB00DF97B3 /* NSURL+JKParam.m in Sources */,
 				FED74DFA1F5668EF005AB588 /* My_Add_Route_TableViewController.m in Sources */,
@@ -3181,8 +3242,10 @@
 				84D49AAB1F96FFDB00DF97B3 /* UIImage+JKBlur.m in Sources */,
 				84D49ADE1F96FFDB00DF97B3 /* UIView+JKAnimation.m in Sources */,
 				84D49CC21F97004400DF97B3 /* UIScrollView+MJExtension.m in Sources */,
+				84AE55AC1F99C924000D0016 /* WalletViewController.m in Sources */,
 				84D49AA31F96FFDB00DF97B3 /* UIControl+JKBlock.m in Sources */,
 				84D49B001F96FFDB00DF97B3 /* UIImage+Mo.m in Sources */,
+				84AE55841F999E1A000D0016 /* GoodCheZhuViewController.m in Sources */,
 				84D49A561F96FFDB00DF97B3 /* NSObject+JKAddProperty.m in Sources */,
 				84D49CC31F97004400DF97B3 /* UIScrollView+MJRefresh.m in Sources */,
 				84D49AF01F96FFDB00DF97B3 /* UIViewController+JKVisible.m in Sources */,
@@ -3205,6 +3268,7 @@
 				84D498201F96FFC300DF97B3 /* BaseViewController.m in Sources */,
 				84D49AC21F96FFDB00DF97B3 /* UINavigationController+JKKeyboardFix.m in Sources */,
 				84D49AF91F96FFDB00DF97B3 /* UIWebView+JKWebStorage.m in Sources */,
+				84AE55B41F99E16F000D0016 /* HeHuoRenViewController.m in Sources */,
 				FE1784F01F4AC9F400FA8BD4 /* AppDelegate.m in Sources */,
 				84D49A981F96FFDB00DF97B3 /* UIButton+JKImagePosition.m in Sources */,
 				84D49AB41F96FFDB00DF97B3 /* UIImage+JKResize.m in Sources */,
