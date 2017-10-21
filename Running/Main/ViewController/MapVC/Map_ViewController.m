@@ -16,25 +16,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-     [self createMapview];
-}
-
-- (void)createMapview
-{
     self.mapView = [[BMKMapView alloc]initWithFrame:self.view.bounds];
     _locService = [[BMKLocationService alloc] init];
     _locService.delegate = self;
     _mapView.showsUserLocation = NO;//先关闭显示的定位图层
+    _mapView.zoomLevel = 18;
     _mapView.userTrackingMode = BMKUserTrackingModeFollow;//设置定位的状态
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(location_click) userInfo:nil repeats:NO];
+    //    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(location_click) userInfo:nil repeats:NO];
     _mapView.showsUserLocation = YES;//显示定位图层
     [_locService startUserLocationService];
+    [self.view addSubview:self.mapView];
 }
 
-- (void)location_click
-{
-    _mapView.userTrackingMode = BMKUserTrackingModeNone;
-}
+
+
+//- (void)location_click
+//{
+//    _mapView.userTrackingMode = BMKUserTrackingModeNone;
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

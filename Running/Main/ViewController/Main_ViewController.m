@@ -5,6 +5,7 @@
 //  Created by 吕志杰 on 2017/8/24.
 //  Copyright © 2017年 吕志杰. All rights reserved.
 //
+#import "XTMapViewController.h"
 #import "HeHuoRenViewController.h"
 #import "WalletViewController.h"
 #import "Main_ViewController.h"
@@ -24,6 +25,17 @@
 - (IBAction)person_click:(id)sender;
 @property (weak, nonatomic) IBOutlet UIView *main_view;
 
+@property (weak, nonatomic) IBOutlet UIView *daohangBtn;
+@property (weak, nonatomic) IBOutlet UILabel *startAddress;
+@property (weak, nonatomic) IBOutlet UILabel *endAddress;
+@property (weak, nonatomic) IBOutlet UIButton *startBtn;
+@property (weak, nonatomic) IBOutlet UIButton *endBtn;
+@property (weak, nonatomic) IBOutlet UIView *navView;
+
+
+
+
+
 @property (strong ,nonatomic)Top_view *topview;
 @property (strong ,nonatomic)Search_View *searchiew;
 @property (nonatomic, strong) Label_Text_view *movingTextView;
@@ -32,6 +44,31 @@
 @end
 
 @implementation Main_ViewController
+
+- (IBAction)start:(UIButton *)sender {
+    XTMapViewController *vc = [[XTMapViewController alloc]init];
+    vc.callback = ^(NSDictionary *dic) {
+        //拿到回调的数据  经纬度和name的字典
+        NSLog(@"拿到回调的数据  经纬度和name的字典,%@",dic);
+        self.startAddress.text = dic[@"name"];
+       
+    };
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
+
+- (IBAction)end:(UIButton *)sender {
+    XTMapViewController *vc = [[XTMapViewController alloc]init];
+    vc.callback = ^(NSDictionary *dic) {
+        //拿到回调的数据  经纬度和name的字典
+        NSLog(@"拿到回调的数据  经纬度和name的字典,%@",dic);
+        self.endAddress.text = dic[@"name"];
+    };
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
+
+
 
 - (Person_Tableview *)persontableview
 {
@@ -94,9 +131,15 @@
     [self.back_View setHidden:YES];
     [[[UIApplication sharedApplication].windows firstObject] addSubview:self.persontableview];
     [self add_block];
-    
+    [self.main_view bringSubviewToFront:self.daohangBtn];
+    [self.main_view bringSubviewToFront:self.navView];
+//    self.
+    UITapGestureRecognizer*tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(daohangBtnClick)];
+    [self.daohangBtn addGestureRecognizer:tap];
 }
-
+-(void)daohangBtnClick{
+    self.navView.hidden = !self.navView.hidden;
+}
 - (void)add_block
 {
     __weak typeof(self)weakself = self;

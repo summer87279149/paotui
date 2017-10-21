@@ -11,6 +11,8 @@
 		525797E803E618AA4C27CA4A /* libPods-Running.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6432AF2D623D4C74A2789F23 /* libPods-Running.a */; };
 		846BA3921F9750FF0059525B /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846BA3911F9750FF0059525B /* Reveal.framework */; };
 		848C04011F94601E00678932 /* WJSegmentMenuVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 848C04001F94601E00678932 /* WJSegmentMenuVc.m */; };
+		84980B341F9AFBBE00F1BCF1 /* WaitingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84980B321F9AFBBE00F1BCF1 /* WaitingViewController.m */; };
+		84980B351F9AFBBE00F1BCF1 /* WaitingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84980B331F9AFBBE00F1BCF1 /* WaitingViewController.xib */; };
 		84A5D34B1F98461E00BB3E4F /* DengRuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A5D3491F98461E00BB3E4F /* DengRuViewController.m */; };
 		84A5D34C1F98461E00BB3E4F /* DengRuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5D34A1F98461E00BB3E4F /* DengRuViewController.xib */; };
 		84A5D3501F984DD600BB3E4F /* WangJiPwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A5D34E1F984DD600BB3E4F /* WangJiPwdViewController.m */; };
@@ -401,6 +403,9 @@
 		846BA3911F9750FF0059525B /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		848C03FF1F94601E00678932 /* WJSegmentMenuVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJSegmentMenuVc.h; sourceTree = "<group>"; };
 		848C04001F94601E00678932 /* WJSegmentMenuVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJSegmentMenuVc.m; sourceTree = "<group>"; };
+		84980B311F9AFBBE00F1BCF1 /* WaitingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WaitingViewController.h; path = "ViewController/呼叫等待页面/WaitingViewController.h"; sourceTree = SOURCE_ROOT; };
+		84980B321F9AFBBE00F1BCF1 /* WaitingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = WaitingViewController.m; path = "ViewController/呼叫等待页面/WaitingViewController.m"; sourceTree = SOURCE_ROOT; };
+		84980B331F9AFBBE00F1BCF1 /* WaitingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WaitingViewController.xib; path = "ViewController/呼叫等待页面/WaitingViewController.xib"; sourceTree = SOURCE_ROOT; };
 		84A5D3481F98461E00BB3E4F /* DengRuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DengRuViewController.h; sourceTree = "<group>"; };
 		84A5D3491F98461E00BB3E4F /* DengRuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DengRuViewController.m; sourceTree = "<group>"; };
 		84A5D34A1F98461E00BB3E4F /* DengRuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DengRuViewController.xib; sourceTree = "<group>"; };
@@ -1144,6 +1149,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84980B2F1F9AFB3700F1BCF1 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		84980B301F9AFB6F00F1BCF1 /* 呼叫等待页面 */ = {
+			isa = PBXGroup;
+			children = (
+				84980B311F9AFBBE00F1BCF1 /* WaitingViewController.h */,
+				84980B321F9AFBBE00F1BCF1 /* WaitingViewController.m */,
+				84980B331F9AFBBE00F1BCF1 /* WaitingViewController.xib */,
+			);
+			path = "呼叫等待页面";
+			sourceTree = "<group>";
+		};
 		84AE55801F999DC8000D0016 /* 车主申请 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1200,6 +1222,7 @@
 		84D498161F96FDD000DF97B3 /* 注册登入 */ = {
 			isa = PBXGroup;
 			children = (
+				84980B2F1F9AFB3700F1BCF1 /* New Group */,
 				84D49D821F972AE800DF97B3 /* ZhuCeViewController.h */,
 				84D49D831F972AE800DF97B3 /* ZhuCeViewController.m */,
 				84D49D841F972AE800DF97B3 /* ZhuCeViewController.xib */,
@@ -2685,6 +2708,7 @@
 		FE3476BD1F4E5D6600436C96 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				84980B301F9AFB6F00F1BCF1 /* 呼叫等待页面 */,
 				FE906A401F53DB7C000D0A10 /* Run_ViewController.h */,
 				FE906A411F53DB7C000D0A10 /* Run_ViewController.m */,
 				FED74DBC1F5419E8005AB588 /* Say_ViewController.h */,
@@ -2985,6 +3009,7 @@
 				84C41D151F98996B007E2F04 /* CityData.plist in Resources */,
 				84D49D741F97208A00DF97B3 /* TOCropViewControllerLocalizable.strings in Resources */,
 				84C41D051F987E5F007E2F04 /* XTMapViewController.xib in Resources */,
+				84980B351F9AFBBE00F1BCF1 /* WaitingViewController.xib in Resources */,
 				84AE55C11F99F02F000D0016 /* HeHuoRenCell.xib in Resources */,
 				FE906A211F5152FC000D0A10 /* Top_View.xib in Resources */,
 				FE906A4D1F53DFC3000D0A10 /* Run_Detail_View.xib in Resources */,
@@ -3303,6 +3328,7 @@
 				84D49D801F9721B100DF97B3 /* UserModel.m in Sources */,
 				FED74DF71F565DE4005AB588 /* My_Route_TableViewCell.m in Sources */,
 				84D49AE01F96FFDB00DF97B3 /* UIView+JKConstraints.m in Sources */,
+				84980B341F9AFBBE00F1BCF1 /* WaitingViewController.m in Sources */,
 				84D49CBE1F97004400DF97B3 /* MJRefreshBaseView.m in Sources */,
 				84D49A501F96FFDB00DF97B3 /* NSNotificationCenter+JKMainThread.m in Sources */,
 				FED74DC11F5544FE005AB588 /* Run_Pay_Result_TableViewController.m in Sources */,

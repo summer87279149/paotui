@@ -5,6 +5,7 @@
 //  Created by 吕志杰 on 2017/8/28.
 //  Copyright © 2017年 吕志杰. All rights reserved.
 //
+#import "WaitingViewController.h"
 #import "XTMapViewController.h"
 #import "Map_ViewController.h"
 #import "Run_ViewController.h"
@@ -186,9 +187,11 @@
 {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:@"亲，您需要支付1元服务费即可呼叫车主接单哦～" preferredStyle:UIAlertControllerStyleAlert];
     [alertController addAction:[UIAlertAction actionWithTitle:@"立即支付" style:UIAlertActionStyleDefault  handler:^(UIAlertAction * _Nonnull action) {
-        Run_Pay_Result_TableViewController *pay_vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"RUNPAYID"];
-        pay_vc.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:pay_vc animated:YES];
+        WaitingViewController *vc = [[WaitingViewController alloc]init];
+        vc.hidesBottomBarWhenPushed = YES;
+//        Run_Pay_Result_TableViewController *pay_vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"RUNPAYID"];
+//        pay_vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
        // PINGCHNAGSTORYBOARD(@"Main", @"RUNPAYID");
     }]];
     [alertController addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:nil]];

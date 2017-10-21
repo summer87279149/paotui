@@ -1,20 +1,9 @@
-
-
-
-
-//
-//  HeHuoRenViewController.m
-//  Running
-//
-//  Created by Admin on 2017/10/20.
-//  Copyright © 2017年 吕志杰. All rights reserved.
-//
 #import "HeHuoRenCell.h"
 #import "HeHuoRenViewController.h"
 
 @interface HeHuoRenViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 {
-    UINib *nib;
+//    UINib *nib;
 }
 @property (weak, nonatomic) IBOutlet UICollectionView *collection;
 @end
@@ -24,10 +13,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"合伙人";
-     nib =  [UINib nibWithNibName:@"HeHuoRenViewController" bundle:nil];
+//     nib =  [UINib nibWithNibName:@"HeHuoRenViewController" bundle:nil];
     [self.collection registerNib:[UINib nibWithNibName:@"HeHuoRenCell" bundle:nil] forCellWithReuseIdentifier:@"CellID"];
 }
-
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return 30;
@@ -45,10 +33,8 @@
     return CGSizeMake(90,100);
 }
 
-
 - ( UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CellID" forIndexPath:indexPath];
-
     return cell;
 }
 
@@ -80,7 +66,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 /*
